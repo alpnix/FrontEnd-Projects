@@ -20,7 +20,7 @@ function graph() {
           y: dataArr,
           type: 'scatter',
           marker: {
-            color: 'rgb(17, 157, 255)',
+            color: 'rgb(255,165,0)',
             size: 10,
             line: {
               color: 'rgba(255, 255, 255,0.5)',
@@ -31,7 +31,7 @@ function graph() {
     ];
     var layout = {
         title: {
-          text:'TechKing Current Growth Rate',
+          text:'<i>TechKing</i> Current Growth Rate',
           font: {
             family: 'Courier New, monospace',
             size: 24,
@@ -101,4 +101,4 @@ setInterval(function() {
 
 setInterval(function() {
     graph();
-},3000);
+},2000);

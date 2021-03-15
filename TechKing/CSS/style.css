@@ -51,21 +51,18 @@ main {
     margin: auto;
     width: 100%;
     height: 100%;
-}
-
-.showcase-right {
-    height: 100%;
-    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
     align-items: center;
+    justify-content: center;
 }
 
 .showcase-right p {
     font-size: 12px;
     text-align: left;
+}
+
+.showcase-right {
+    margin-top: 40px;
 }
 
 #about-articles article {
@@ -92,20 +89,38 @@ main {
 .w-80 {
     height: 100%;
     width: 80%;
+    margin: auto;
 }
 
 .w-90 {
     margin-top: 30px;
     height: 100%;
     width: 90%;
+    margin: auto;
+}
+
+.col {
+    width: 100%;
+}
+
+#graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
 }
 
 
-
-
-
-
-
+@media screen and (max-width: 800px) {
+    #showcase .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
