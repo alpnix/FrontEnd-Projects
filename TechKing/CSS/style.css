@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(rgba(170,170,170,0.06),rgba(170,170,170,0.06)), url("http://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"); 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Poppins;
+    color: white;
+}
+
+span {
+    color: orangered;
+}
+
+p {
+    font-family: Roboto;
+    color: white;
+}
+
+.navbar-expand-lg {
+    background: #fff !important;
+    font-family: Poppins;
+    border:0;
+}
+
+.navbar-brand {
+    font-size:20px;
+    color:#000 !important;
+    font-weight: bold;
+}
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+#showcase .row {
+    position: relative;
+    top: 20px;
+}
+
+#showcase strong {
+    color: orange;
+}
+
+#showcase h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.showcase-left svg {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-right {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.showcase-right p {
+    font-size: 12px;
+    text-align: left;
+}
+
+#about-articles article {
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#about-articles {
+    text-align: right;
+}
+
+#about-articles p {
+    line-height: 35px;
+}
+
+#about-articles strong {
+    color: orange;
+}
+
+.w-80 {
+    height: 100%;
+    width: 80%;
+}
+
+.w-90 {
+    margin-top: 30px;
+    height: 100%;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
