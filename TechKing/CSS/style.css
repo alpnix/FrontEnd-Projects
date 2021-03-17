@@ -122,7 +122,12 @@ footer {
     }
 }
 
-
+@media screen and (max-width: 1000px) {
+    #about-articles .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
