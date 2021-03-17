@@ -6,11 +6,28 @@
     color: white;
 }
 
+span {
+    width: 120px;
+    height: 120px;
+    opacity: 30%;
+    display: inline-block;
+    background: url("../img/blob.svg");
+}
+
 header {
     position: relative;
     height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(34,18,21,0.8),rgba(34,18,21,0.8)),url("https://videohive.img.customer.envatousercontent.com/files/226179982/data_and_numbers_preview_image.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=585e610d39da0d5f0cdc216c380ce211");
+    background-size: cover;
+}
+
+#about {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(34,18,21,0.8),rgba(34,18,21,0.8)),url("https://videohive.img.customer.envatousercontent.com/files/226179982/data_and_numbers_preview_image.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=585e610d39da0d5f0cdc216c380ce211");
+    background-size: cover;
 }
 
 .container {
