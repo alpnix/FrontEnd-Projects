@@ -8,15 +8,13 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     <!-- STYLES -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- ICON -->
     <link rel="icon" 
     type="image/png" 
     href="img/icon48.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- SCRIPTS -->
-    <scrip src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></scrip>
     <title>TechKing</title>
 
 </head>
@@ -183,7 +181,7 @@
     </footer>
 
 
-
+    <!-- SCRIPTS -->
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -191,7 +189,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="JS/script.js"></script>
     <script src="JS/scroll.js"></script>
     <script>
@@ -201,7 +199,6 @@
         let callback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry.target)
                     anime({
                         targets: entry.target,
                         innerHTML: [0, 2500],
