@@ -199,7 +199,6 @@
         let callback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry.target)
                     anime({
                         targets: entry.target,
                         innerHTML: [0, 2500],
