@@ -27,7 +27,6 @@ function reqListener () {
         }
     }
     let size = 40;
-    console.log(results)
     let data = {
         labels: labels.slice(0,size),
         datasets: [{
@@ -84,7 +83,6 @@ function reqListener () {
         data: data,
         options: options
     });  
-    console.log(mathScores)  
 }
 
 oReq.addEventListener("load", reqListener);

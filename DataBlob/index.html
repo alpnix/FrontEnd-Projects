@@ -67,22 +67,29 @@
             <div class="example">
                 <canvas id="myChart" width="500px" height="355px" class="example-photo"></canvas>
                 <p class="example-text">Only the first 50 data points of the CSV file is shown. The graph is plotted with Chart JS</p>
-                <a download href="export/StudentsPerformance.csv" class="example-btn"><i class="fas fa-download"></i> Download Data</a>
+                <a download href="export/StudentsPerformance.csv" class="example-btn"><i class="fas fa-download"></i>Download Data</a>
             </div>
             <div class="example">
                 <iframe class="example-photo" width="560" height="315" src="https://www.youtube.com/embed/b4d5zPDB-0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p class="example-text">Plotting the stock data coming from the Yahoo Finance API</p>
-                <a href="https://www.youtube.com/watch?v=b4d5zPDB-0g" class="example-btn"><i class="fas fa-eye"></i></i> Visit</a>
+                    <a href="https://www.youtube.com/watch?v=b4d5zPDB-0g" class="example-btn"><i class="fas fa-eye"></i></i> Visit</a>                
             </div>
             <div class="example">
                 <img src="export/temperatures.png" alt="high low temperatures" class="example-photo">
                 <p class="example-text">Graphing the daily high and low temperature data that I scraped from the web</p>
-                <a download href="export/temperatures.png" class="example-btn"><i class="fas fa-download"></i> Download</a>
+                <div class="downloads"> 
+                    <a download href="export/temperatures.png" class="example-btn"><i class="fas fa-download"></i> Download PNG</a>
+                    <a download href="export/weather.csv" class="example-btn"><i class="fas fa-download"></i> Download Data</a>
+                </div>
+                
             </div>
             <div class="example">
                 <img src="export/pichichi.PNG" alt="pichichi trophy" class="example-photo">
                 <p class="example-text">Goals scored and games played by the winner of the <i> La Liga</i> top goal scorer every year <blockquote>Data scraped from <i>Wikipedia</i></blockquote><br> </p>
-                <a download href="export/pichichi.PNG" class="example-btn"><i class="fas fa-download"></i> Download</a>
+                <div class="downloads">
+                    <a download href="export/pichichi.PNG" class="example-btn"><i class="fas fa-download"></i> Download PNG</a>
+                    <a download href="export/pichichi.csv" class="example-btn"><i class="fas fa-download"></i> Download Data</a>
+                </div>
             </div>
             <div class="example">
                 <img src="export/js_repos.PNG" alt="pichichi trophy" class="example-photo">
@@ -92,31 +99,39 @@
             <div class="example">
                 <img src="export/monthly_earthquakes.PNG" alt="earthquakes in the world" class="example-photo">
                 <p class="example-text">Plotting the locations of earthquakes all around the world in the last month. Data is scraped from the web</p>
-                <a download href="export/monthly_earthquakes.html" class="example-btn"><i class="fas fa-download"></i> Download HTML</a>
+                <div class="downloads">
+                    <a download href="export/monthly_earthquakes.html" class="example-btn"><i class="fas fa-download"></i> Download HTML</a>
+                    <a download href="export/monthearthquakes.json" class="example-btn"><i class="fas fa-download"></i> Download Data</a>
+                </div>
             </div>
         </section>    
     </section>
-    
+
+
+    <div id="success-msg"><p>Thank you for sending us your feedback</p><i class="fas fa-times"></i>
+    </div>
+
+
     <section id="contact">
         <h1>Give Us Feedback...</h1>
         <form method="POST" class="">
             <div class="form-main">
                 <div class="form-group">
                     <label for="">E-mail(optional):</label>
-                    <input placeholder="john.doe@gmail.com" type="email" name="email" id="userEmail">
+                    <input autocomplete="off" placeholder="john.doe@gmail.com" type="email" name="email" id="userEmail">
                 </div>
                 <div class="form-group">
                     <label for="satisfaction">How satisfied were you with our services?</label>
                     <select name="satisfaction" id="satisfaction">
                         <option value="pretty satisfied">😁</option>
-                        <option value="not bad">😐</option>
+                        <option value="neutral">😐</option>
                         <option value="not satisfied">🙁</option>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label for="feedback">Tell us about your experience</label>
-                <textarea autocapitalize spellcheck autocomplete autocorrect required name="feedback" id="feedback" cols="30" rows="10" placeholder="I had issue with..., I liked the..."></textarea>
+                <textarea required name="feedback" id="feedback" cols="30" rows="10" placeholder="I had issue with..., I liked the..."></textarea>
             </div>
             <div class="form-group">
                 <input type="submit" value="Send">
@@ -144,6 +159,7 @@
     </section>
 
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>

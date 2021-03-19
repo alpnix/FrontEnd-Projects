@@ -12,7 +12,6 @@ menuBtn.addEventListener("click", function (e) {
     else {
         menu.style.right = menu_pos;
     }
-    console.log(right)
 })
 
 /* Revealing Elements on Scroll */
@@ -84,17 +83,45 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 /* Handling the valid and invalid cases in the form */
 
+let init = function() {
+    emailjs.init("user_9od2hNmlxgAWyklC3gCHa");
+};
+init();
+
 let form = document.querySelector("#contact form");
 let textarea = document.querySelector("#contact textarea");
+let e_mail = document.querySelector("#contact input[type=email]");
+let satisfaction = document.querySelector("#contact select");
+var success_msg = document.querySelector("#success-msg")
+var close_success = document.querySelector("#success-msg i");
+
+close_success.addEventListener("click", function() {
+    success_msg.style.display = "none";
+})
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    let msg = "Thank you for sending us feedback";
-    if (textarea.content == false) {
-        msg = "Please write feedback before sending";
+    let alert_msg = "Thank you for sending us feedback";
+    var to_name = "Alp Niksarlı";
+    var from_name = e_mail.value ? e_mail.value : "Anonymous";
+    var message = `The client is ${satisfaction.value}.\n${textarea.value}`;       
+    function sendMail (params) {
+        var tempParams = {
+            from_name: from_name,
+            to_name: to_name,
+            message: message,
+        }
+        emailjs.send("service_83wje1h","template_4x1bhyp",tempParams)
+        .then(function(res) {
+            if (res.status == 200) {
+                console.log("Feedback sent successfully");
+            }
+        })
     }
-    alert(msg);
+    success_msg.style.display = "block";
+    sendMail();
+    e_mail.value = "";
+    textarea.value = "";
+    satisfaction.value = "pretty satisfied";
 })
-
-
 
