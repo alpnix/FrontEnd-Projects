@@ -162,7 +162,7 @@ header .content {
     margin: 20px auto;
 }
 
-.content button {
+.content a {
     background-color: rgba(63,72,204,0.9);
     border: none;
     outline: none;
@@ -171,6 +171,7 @@ header .content {
     border: 3px rgb(63,72,204) solid;
     cursor:pointer;
 }
+
 
 /* -------- About -------- */
 
@@ -397,6 +398,7 @@ footer {
 #contact > * {
     display: block;
 }
+
 
 input::placeholder, ::placeholder {
     color: rgba(255,255,255,0.7);

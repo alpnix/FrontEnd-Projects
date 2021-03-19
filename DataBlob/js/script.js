@@ -14,70 +14,17 @@ menuBtn.addEventListener("click", function (e) {
     }
 })
 
-/* Revealing Elements on Scroll */
-window.sr = ScrollReveal();
-
-/*
-sr.reveal(".brand-logo", {
-    origin: "bottom",
-    duration: 1500,
-    distance: "50px"
-})
-
-sr.reveal("header .content img", {
-    origin: "top",
-    distance: "300px",
-    duration: 2000,
-    delay: 800
-})
-
-sr.reveal("header .content h1", {
-    origin: "left",
-    distance: "300px",
-    duration: 2000,
-    delay: 800
-})
-
-sr.reveal("header .content p", {
-    origin: "left",
-    distance: "300px",
-    duration: 2000,
-    delay: 800
-})
-
-sr.reveal("header .content button", {
-    origin: "bottom",
-    distance: "100px",
-    duration: 2000,
-    delay: 1900
-})
-
-sr.reveal("#about .content h1,p", {
-    origin: "top",
-    distance: "300px",
-    duration: 2000,
-})
-
-
-sr.reveal("#about .content img", {
-    origin: "left",
-    distance: "300px",
-    duration: 2000,
-})
-
-sr.reveal("#about .content button", {
-    delay: 1400,
-    origin: "bottom",
-    distance: "100px",
-    duration: 1000,
-})
-*/
 
 /* Adding Smooth Scrolling to Menu */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 500,
-	updateURL: false, // Update the URL on scroll
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+        return false;
+    });
 });
 
 
