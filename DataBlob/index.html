@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.webp">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://use.fontawesome.com/627ce6e5ba.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>DataBlob</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <a href="" class="brand-logo">
                 <img src="img/logo.webp" alt="logo">
@@ -26,19 +28,19 @@
             <article>
                 <h1>Over 20,000 Free <br> Visualizations Available</h1>
                 <p>Lorem ipsum dolor  sit amet consectetur adipisicing elit. Iusto laborum nemo distinctio cum fuga magni dolorem illum esse molestias commodi autem fugiat, tenetur odit, assumenda debitis dicta at quod libero?</p>
-                <button>Learn More</button>
+                <button><a href="#examples">Learn More</a></button>
             </article>
-            <img src="https://freepngimg.com/thumb/technology/63583-visualization-data-illustration-png-image-high-quality.png" alt="data visualization example">    
+            <img src="img/business.png" alt="data visualization example">    
         </section>
         
     </header>
 
     <div id="side-nav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="#examples"><i class="fas fa-chart-area"></i> Examples</a></li>
+            <li><a href="#contact"><i class="fas fa-comments"></i> Contact</a></li>
         </ul>
     </div>
 
@@ -46,27 +48,107 @@
         <div class="content">
             <img src="img/undraw_content_team_3epn.svg" alt="team and work">
             <article>
-                <h1>About <i>DataBlob</i></h1>
+                <h1>About <i>DataBlob</i> Team</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium quaerat quae omnis animi perferendis odit voluptatem amet, ullam quo similique excepturi eum dolores reprehenderit itaque, sunt labore qui. Deserunt incidunt optio eos ab reprehenderit quaerat magni deleniti magnam eveniet!</p>
                 <div class="lines">
                     <div class="line-1"></div>
                     <div class="line-2"></div>
                     <div class="line-3"></div>
                 </div>
-                <button>Learn More</button>
+                <button><a href="#contact">Learn More</a></button>
             </article>
         </div>
     </section>
 
-    <section id="examples">
-        <iframe src="https://phet.colorado.edu/sims/html/neuron/latest/neuron_en.html" width="800" height="600" scrolling="no" allowfullscreen></iframe>
+    <section id="showcase">
+        <h1>Some  Data Visualization Examples</h1>
+        
+        <section id="examples">
+            <div class="example">
+                <canvas id="myChart" width="500px" height="355px" class="example-photo"></canvas>
+                <p class="example-text">Only the first 50 data points of the CSV file is shown. The graph is plotted with Chart JS</p>
+                <a download href="export/StudentsPerformance.csv" class="example-btn"><i class="fas fa-download"></i> Download Data</a>
+            </div>
+            <div class="example">
+                <iframe class="example-photo" width="560" height="315" src="https://www.youtube.com/embed/b4d5zPDB-0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="example-text">Plotting the stock data coming from the Yahoo Finance API</p>
+                <a href="https://www.youtube.com/watch?v=b4d5zPDB-0g" class="example-btn"><i class="fas fa-eye"></i></i> Visit</a>
+            </div>
+            <div class="example">
+                <img src="export/temperatures.png" alt="high low temperatures" class="example-photo">
+                <p class="example-text">Graphing the daily high and low temperature data that I scraped from the web</p>
+                <a download href="export/temperatures.png" class="example-btn"><i class="fas fa-download"></i> Download</a>
+            </div>
+            <div class="example">
+                <img src="export/pichichi.PNG" alt="pichichi trophy" class="example-photo">
+                <p class="example-text">Goals scored and games played by the winner of the <i> La Liga</i> top goal scorer every year <blockquote>Data scraped from <i>Wikipedia</i></blockquote><br> </p>
+                <a download href="export/pichichi.PNG" class="example-btn"><i class="fas fa-download"></i> Download</a>
+            </div>
+            <div class="example">
+                <img src="export/js_repos.PNG" alt="pichichi trophy" class="example-photo">
+                <p class="example-text">Plotting the most starred JS Repos on Github by using the GitHub API</p>
+                <a download href="export/js_repos.html" class="example-btn"><i class="fas fa-download"></i> Download HTML</a>
+            </div>
+            <div class="example">
+                <img src="export/monthly_earthquakes.PNG" alt="earthquakes in the world" class="example-photo">
+                <p class="example-text">Plotting the locations of earthquakes all around the world in the last month. Data is scraped from the web</p>
+                <a download href="export/monthly_earthquakes.html" class="example-btn"><i class="fas fa-download"></i> Download HTML</a>
+            </div>
+        </section>    
+    </section>
+    
+    <section id="contact">
+        <h1>Give Us Feedback...</h1>
+        <form method="POST" class="">
+            <div class="form-main">
+                <div class="form-group">
+                    <label for="">E-mail(optional):</label>
+                    <input placeholder="john.doe@gmail.com" type="email" name="email" id="userEmail">
+                </div>
+                <div class="form-group">
+                    <label for="satisfaction">How satisfied were you with our services?</label>
+                    <select name="satisfaction" id="satisfaction">
+                        <option value="pretty satisfied">😁</option>
+                        <option value="not bad">😐</option>
+                        <option value="not satisfied">🙁</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Tell us about your experience</label>
+                <textarea autocapitalize spellcheck autocomplete autocorrect required name="feedback" id="feedback" cols="30" rows="10" placeholder="I had issue with..., I liked the..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send">
+            </div>
+        </form>    
+        <footer>
+            <div id="social-icons"">
+                <a target="blank" href="https://github.com/alpnix/"><i class="fab fa-github fa-3x"></i></a>
+                <a target="blank" href="https://www.instagram.com/alpniksarli/"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/alp-niksarli-943a75206/" target="blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            </div>
+            <hr class="container">
+            <div class="container footer-info">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <span>Ortaklar, Mecidiyekoy<br>Istanbul, Turkey</span></p>
+                    <p><i class="fas fa-phone-alt"></i> +90 553 017 44 44</p>
+                    <p><i class="fas fa-envelope"></i> <a style="color: lightblue;" href="mailto:alp.niksarli@gmail.com">alp.niksarli@gmail.com</a></p>
+                </div>
+                <div class="container about-info">
+                    <h1>About DataBlob</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio assumenda, nisi placeat hic fugiat modi nulla autem odio qui delectus!</p>
+                </div>
+            </div>
+        </footer>
     </section>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-	<script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/chart.js"></script>
 </body>
 </html>
