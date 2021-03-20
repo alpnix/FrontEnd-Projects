@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="img/logo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Panch Linguistic</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- THE NAVBAR -->
+        <div id="nav">
+            <div id="logo"><p>P.</p></div>
+            <a class="filter" href="#"><img src="img/filter.png" alt="" class="btn"></a>
+            <a class="dashboard" href="#"><img src="img/dashboard.png" alt="" class="btn active"></a>
+            <a class="prfile" href="#"><img src="img/profile.png" alt="" class="btn"></a>
+            <a class="stats" href="#"><img src="img/stats.png" alt="" class="btn"></a>
+        </div>
+
+        <!-- MAIN DASHBOARD -->
+        <div id="main">
+            <h2>Progress Dashboard</h2>
+            <section class="top">
+                <div class="exam">
+                    <p><span class="subTitle">DEADLINE </span>12:00</p>
+                    <p class="largeTitle">Exam - Unit 5</p>
+                    <p class="subTitle">Spanish for Beginners</p>
+                    <div class="test">
+                        <img src="img/profile-imgs.png" alt="profile images">
+                        <a href="">Start Testing</a>
+                    </div>
+                </div>
+                <div class="homework todo">
+                    <i class="far fa-check-circle fa-2x"></i>
+                <p class="todoTitle">Homework</p>
+                <p class="todoSub">For today's <br>lesson.</p>
+
+                </div>
+                <div class="reading todo">
+                    <i class="far fa-check-circle fa-2x"></i>
+                    <p class="todoTitle">Reading</p>
+                    <p class="todoSub">25 words per <br>week.</p>    
+                </div>
+            </section>
+            <section class="middle">
+                <div class="group">
+                    <div class="groupHeader">
+                        <p class="title">Group Info <br> 
+                        <span class="subTitle">13 Students in the group</span></p>
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <div class="groupHomework">
+                        <p class="title">Group Homework<br> 
+                            <span class="subTitle">5 Students from your group online now<span></p>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <div class="groupFooter">
+                        <p class="title">Today's Lessons <br> 
+                            <span class="subTitle">Unit 6 - Articles</span></p>
+                            <p>12:00</p>
+                    </div>
+                </div>
+                <div class="flagProgress">
+                    <div class="flagProgressTitle">
+                        <img src="img/spain.png" alt="Spain Flag">
+                    </div>
+                    <p class="largeTitle">Spanish for <br>beginners</p>
+                    <div class="flagProgressAmt">
+                        <p>75%</p>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="botGrammar bot">
+                    <div>
+                        <i class="fas fa-pencil-alt icon-circle"></i>
+                        <p class="title">Grammar <br><span class="subTitle">+30 grammar rules</span></p>
+                    </div>
+                    <i class="fas fa-angle-right pointer"></i>
+                </div>
+                <div class="botDictionary bot">
+                    <div>
+                        <i class="fas fa-spell-check icon-circle"></i>                        
+                        <p class="title">Dictionary <br><span class="subTitle">+10 new words</span></p>
+                    </div>
+                    <i class="fas fa-angle-right pointer"></i>
+                </div>
+            </section>
+        </div>
+
+        <!-- PROFILE -->
+        <div id="profile">
+            <div class="pic">
+                <img src="img/profilephoto.jpg" alt="Profile Photo">
+                <p class="largeTitle name">Alp Niksarlı</p>
+                <p class="subTitle">Front-end Web Developer</p>
+            </div>
+            <div class="ad">
+                <div class="adBox">
+                    <p class="title">Get -10% sell price <br><span>For Spanish A2 course</span></p>
+                    <div class="icon pointer"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+            <div class="progress">
+                <p class="largeTitle">Courses Progress</p>
+                <div class="progressBox grammar">
+                    <p class="percent">63%</p>
+                    <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+                    <p class="title">Grammar <br><span class="subTitle">Learn new rules.</span></p>
+                </div>
+                <div class="progressBox dictionary">
+                    <p class="percent">78%</p>
+                    <div class="icon"><i class="fas fa-spell-check"></i></div>                    
+                    <p class="title">Grammar <br><span class="subTitle">Learn 5 new words.</span></p>
+                </div>
+                <div class="progressBox reading">
+                    <p class="percent">34%</p>
+                    <div class="icon"><i class="fas fa-book-open"></i></div>
+                    <p class="title">Reading <br><span class="subTitle">Train your skill.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let logo = document.querySelector("#logo");
+        let navItems = document.querySelectorAll("#nav a");
+        logo.addEventListener("click", function() {
+            window.location.href = window.location.pathname;
+            console.log(window.location.hostname);
+        });
+        for (item of navItems) {
+            item.addEventListener("click",changePage);
+        }
+        function changePage(e) {
+            e.preventDefault();
+            for (item of navItems) {
+                let img = item.querySelector("img")
+                img.classList.remove("active");
+                img.classList.add("btn");
+            }
+            this.querySelector("img").classList.add("active");
+        }
+    </script>
+</body>
+</html>
