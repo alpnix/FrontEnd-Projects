@@ -396,7 +396,105 @@ section.bottom {
         grid-template-areas: 
         "n m p";    
     }
+    #profile {
+        padding: 0 1rem;
+    }
+    .progress .largeTitle {
+        transform: translateX(5%);
+    }
+    .progressBox .discount {
+        width: 100%;
+    }
     section.middle {
         padding-top: 40px;
     }    
+    .container {
+        margin: 0;
+    }
+    section.middle .group {
+        padding: 40px;
+        height: 460px;
+    }
+}
+
+
+@media screen and (max-width: 1075px) {
+    #logo {
+        display: none;
+    }
+    #nav {
+        position: fixed;
+        top: 0;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 5;
+    }
+    .container {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        grid-template-areas: 
+        "m p";
+    }    
+}
+
+
+@media screen and (max-width: 1020px) {
+    .container {
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }    
+    html,body {
+        overflow-x: hidden; 
+    }
+    #profile {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        padding: 0 5vw;
+    }
+    .top .exam {
+        margin: 20px 0;
+    }
+    section.top {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    section.middle .flagProgress, section.middle .group {
+        width: 90%;
+    }
+    .flagProgress {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flagProgress .flagProgressTitle {
+        margin-left: -30%;
+    }
+    section.bottom, section.middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
