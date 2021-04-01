@@ -528,7 +528,7 @@ section.bottom {
     }
     @media screen and (max-height: 900px){
         .container {
-            top: -42vh;
+            top: -32vh;
         }                
     }
 }
