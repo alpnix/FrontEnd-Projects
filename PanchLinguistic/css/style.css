@@ -464,6 +464,12 @@ section.bottom {
         width: 100%;
         padding: 5%;
     }
+    #profile .progress {
+        margin-top: 1.2rem;
+    }
+    #profile .progressBox {
+        margin: 0.6rem 0;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -481,11 +487,18 @@ section.bottom {
     section.middle .flagProgress, section.middle .group {
         width: 90%;
     }
+    section.middle {
+        margin-bottom: -2.6rem;
+        margin-top: 2.6rem;
+    }
     .flagProgress {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    section.bottom .bot {
+        margin: 0.6rem 0;
     }
     .flagProgress .flagProgressTitle {
         margin-left: -30%;
