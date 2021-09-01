@@ -5,4 +5,3 @@ Github Pages Links:
 - DataBlob - https://alpnix.github.io/FrontEnd-Projects/DataBlob/
 - TechKing - https://alpnix.github.io/FrontEnd-Projects/TechKing/
 - PanchLinguistic - https://alpnix.github.io/FrontEnd-Projects/PanchLinguistic/
-- Portfolio - https://alpnix.github.io/FrontEnd-Projects/PortfolioProject/
